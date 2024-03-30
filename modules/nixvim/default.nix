@@ -55,7 +55,9 @@ with lib.wyrdgard; {
       nix.enable = true;
       nix-develop.enable = true;
 
-      rainbow-delimiters = {enable = true;};
+      rainbow-delimiters = {
+        enable = true;
+      };
       nvim-colorizer.enable = true;
 
       undotree.enable = true;
@@ -65,8 +67,6 @@ with lib.wyrdgard; {
       trouble.enable = true;
 
       markdown-preview.enable = true;
-
-      dashboard = {enable = true;};
 
       auto-save = {
         enable = true;
