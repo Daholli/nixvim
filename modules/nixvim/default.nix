@@ -55,7 +55,6 @@ with lib.wyrdgard; {
       nix.enable = true;
       nix-develop.enable = true;
 
-
       rainbow-delimiters = {enable = true;};
       nvim-colorizer.enable = true;
 
