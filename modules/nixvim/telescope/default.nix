@@ -10,17 +10,17 @@ with lib.wyrdgard; {
       keymaps = {
         "<leader>sr" = {
           action = "oldfiles";
-          desc = "[s]earch [r]ecent";
+          options.desc = "[s]earch [r]ecent";
         };
 
         "<leader>sk" = {
           action = "keymaps";
-          desc = "[s]earch [k]eys";
+          options.desc = "[s]earch [k]eys";
         };
 
         "<leader>sg" = {
           action = "live_grep";
-          desc = "[s]earch [g]rep";
+          options.desc = "[s]earch [g]rep";
         };
       };
     };
