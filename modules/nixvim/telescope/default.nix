@@ -8,28 +8,25 @@ with lib.wyrdgard; {
     telescope = {
       enable = true;
       keymaps = {
-        "<leader>sr" = {
+        "<leader>fr" = {
           action = "oldfiles";
-          desc = "[s]earch [r]ecent";
+          options.desc = "[f]ind [r]ecent";
         };
 
-        "<leader>sk" = {
+        "<leader>fk" = {
           action = "keymaps";
-          desc = "[s]earch [k]eys";
+          options.desc = "[f]ind [k]eys";
         };
 
-        "<leader>sg" = {
+        "<leader>fg" = {
           action = "live_grep";
-          desc = "[s]earch [g]rep";
+          options.desc = "[f]ind [g]rep";
         };
       };
     };
 
     which-key.registrations = {
       "<leader>s" = "search";
-      "<leader>sr" = "[s]earch [r]ecent files";
-      "<leader>sk" = "[s]earch [k]eymaps";
-      "<leader>sg" = "[s]earch [g]rep";
     };
   };
 }

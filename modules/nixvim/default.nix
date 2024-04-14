@@ -9,7 +9,8 @@ with lib.wyrdgard; {
     colorschemes.tokyonight.enable = true;
     globals.mapleader = " ";
 
-    clipboard.providers.wl-copy.enable = true;
+    clipboard.providers.xclip.enable = true;
+
 
     opts = {
       number = true;
@@ -50,19 +51,23 @@ with lib.wyrdgard; {
     ];
 
     plugins = {
-      lualine.enable = true;
+      lazy = {
+        enable = true;
+        plugins = with pkgs.vimPlugins; [
+          which-key-nvim
+          trouble-nvim
+          null-ls-nvim
+          lualine-nvim
+          rainbow-delimiters-nvim
+          nvim-colorizer-lua
+          nvim-autopairs
+        ];
+      };
 
       nix.enable = true;
       nix-develop.enable = true;
 
-      rainbow-delimiters = {
-        enable = true;
-      };
-      nvim-colorizer.enable = true;
-
       undotree.enable = true;
-
-      which-key = {enable = true;};
 
       trouble.enable = true;
 
